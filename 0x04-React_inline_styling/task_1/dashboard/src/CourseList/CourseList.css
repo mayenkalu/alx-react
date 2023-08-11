@@ -1,13 +1,18 @@
-.course-list th[colspan='2'] {
+thead tr:first-of-type th {
   text-align: center;
 }
 
-.course-list th {
-  text-align: left;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+th, td {
+  padding: 0.25rem;
+  border: 1px solid lightgray;
 }
 
-.course-list td {
-  text-align: left;
+thead tr:last-of-type th:first-of-type,
+tbody tr td:first-of-type {
+  border-right: 0;
+}
+
+thead tr:last-of-type th:last-of-type,
+tbody tr td:last-of-type {
+  border-left: 0;
 }
